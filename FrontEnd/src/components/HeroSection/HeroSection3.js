@@ -6,11 +6,7 @@ class HeroSection extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    /**
-     * Your ajax will goes here to get data then call setState
-     */
-  }
+
 
   render() {
     return (
@@ -33,10 +29,6 @@ class HeroSection extends React.Component {
                     <span>Computational Mathematics</span>
                   </h1>
                   <p className="lead">Presented by Phongkhanet Kaewrit</p>
-
-                  {/* <a href="#contact" className="btn solid-btn page-scroll">
-                    Get started
-                  </a> */}
                 </div>
               </div>
               <div className="col-md-6 col-lg-5">

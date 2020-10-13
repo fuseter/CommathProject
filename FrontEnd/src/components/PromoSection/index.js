@@ -19,9 +19,7 @@ class PromoSection extends React.Component {
   }
 
   componentDidMount() {
-    /**
-     * Your ajax will goes here to get data then call setState
-     */
+ 
 
     this.setState({
       promo: _data.promo,

@@ -7,11 +7,7 @@ class PromoSection extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    /**
-     * Your ajax will goes here to get data then call setState
-     */
-  }
+
 
   render() {
     return (
