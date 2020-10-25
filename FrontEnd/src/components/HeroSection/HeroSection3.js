@@ -20,15 +20,14 @@ class HeroSection extends React.Component {
             <div className="point animated-point-5"></div>
             <div className="point animated-point-6"></div>
           </div>
-
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-6">
                 <div className="hero-content-left ptb-100">
                   <h1>
-                    <span>Computational Mathematics</span>
+                    <span>คณิตศาสตร์เชิงการคำนวณ</span>
                   </h1>
-                  <p className="lead">Presented by Phongkhanet Kaewrit</p>
+                  <p className="lead" style={{fontSize: 20, color: "#000"}}>พงศ์คเณศ แก้วฤทธิ์ 61114440397</p>
                 </div>
               </div>
               <div className="col-md-6 col-lg-5">

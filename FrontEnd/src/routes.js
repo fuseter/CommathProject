@@ -6,12 +6,14 @@ import Chapter4 from '../src/views/chapter4-Differentiation'
 import Chapter5 from '../src/views/chapter5-Integration'
 import Chapter6 from '../src/views/chapter6-Root-finding'
 import LandingPage from '../src/views/LandingPage'
+import Layout from '../src/layouts/MainLayout'
 
 
 
 const routes = [
   {
     path: "/",
+    element : <Layout/>,
     children: [
       { path: "/", element: <LandingPage /> },
       { path: "chapter1-Basic-Computing", element: <Chapter1 /> },

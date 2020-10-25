@@ -7,44 +7,13 @@ import Container from "@material-ui/core/Container";
 import { Cpu as Cpuicon } from "react-feather";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: "#9629E6",
-    width: theme.spacing(8),
-    height: theme.spacing(8),
-  },
-  form: {
-    width: "100%", 
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
+
 }));
 
 export default function Commath() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
-      <CssBaseline />
-      <div className={classes.paper}>
-        <Avatar sizes="medium" className={classes.avatar}>
-          <Cpuicon size="30" />
-        </Avatar>
-        <Typography component="h1" variant="h5">
-          บทที่ 1
-        </Typography>
-        <Typography component="h1" variant="h5">
-          Basic Computing
-        </Typography>
-      </div>
-    </Container>
+    <div>sdsdsd</div>
   );
 }

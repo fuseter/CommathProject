@@ -1,6 +1,6 @@
 module.exports = {
   promo: {
-    title: "Please select a chapter",
+    title: "เลือกหัวข้อที่ต้องการ",
     description:
       "Following reasons show advantages of adding AgencyCo to your lead pages, demos and checkouts",
     items: [
