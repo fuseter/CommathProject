@@ -8,7 +8,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import PropTypes from "prop-types";
 import { Cpu as Cpuicon } from "react-feather";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,20 +63,24 @@ export default function ButtonAppBar(props) {
           <AppBar className={classes.appbarcolor}>
             <Toolbar>
               <Link to="/">
-              <IconButton
-                edge="start"
-                className={classes.menuButton}
-                color="inherit"
-                aria-label="menu"
+                <IconButton
+                  edge="start"
+                  className={classes.menuButton}
+                  color="inherit"
+                  aria-label="menu"
                 >
-                <Cpuicon  color="#fff" />
-              </IconButton>
-                </Link>
-                <Link to="/">
-              <Typography style={{color : "#fff" ,textTransform : "uppercase"}} variant="h6" className={classes.title}>
-                Commath
-              </Typography>
-                </Link>
+                  <Cpuicon color="#fff" />
+                </IconButton>
+              </Link>
+              <Link to="/">
+                <Typography
+                  style={{ color: "#fff", textTransform: "uppercase" }}
+                  variant="h6"
+                  className={classes.title}
+                >
+                  Commath
+                </Typography>
+              </Link>
             </Toolbar>
           </AppBar>
         </ElevationScroll>

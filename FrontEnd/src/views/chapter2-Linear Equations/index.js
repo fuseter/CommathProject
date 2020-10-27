@@ -7,25 +7,7 @@ import Container from "@material-ui/core/Container";
 import { Cpu as Cpuicon } from "react-feather";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: "#9629E6",
-    width: theme.spacing(8),
-    height: theme.spacing(8),
-  },
-  form: {
-    width: "100%", 
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
+
 }));
 
 export default function Commath() {
