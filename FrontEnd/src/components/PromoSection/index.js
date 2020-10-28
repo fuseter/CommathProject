@@ -8,8 +8,8 @@ import {
   Search as Searchicon,
   Server as Sercericon,
 } from "react-feather";
-import { Link } from "react-router-dom";
-import Avatar from '@material-ui/core/Avatar';
+import { Link , useNavigate} from "react-router-dom";
+import Avatar from "@material-ui/core/Avatar";
 
 class PromoSection extends React.Component {
   constructor(props) {
@@ -26,6 +26,15 @@ class PromoSection extends React.Component {
   }
 
   render() {
+    const { navigation } = this.props;
+
+   const  nextPage = () => {
+      navigation()
+    }
+
+
+
+
     return (
       <React.Fragment>
         <section className="promo-section ptb-100">
@@ -43,9 +52,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                      
-                          <Cpuicon color="#9629E6" size="30" />
-                  
+                        <Cpuicon color="#9629E6" size="30" />
                       </span>
                     </div>
                     <h4>บทที่ 1</h4>
@@ -87,7 +94,6 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        
                         <Boxicon color="#9629E6" size="30" />
                       </span>
                     </div>
@@ -116,7 +122,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <Searchicon color="#9629E6" size="40"/>
+                        <Searchicon color="#9629E6" size="40" />
                       </span>
                     </div>
                     <h4>บทที่ 6</h4>

@@ -57,7 +57,7 @@ export default function ButtonAppBar(props) {
         <ElevationScroll {...props}>
           <AppBar className={classes.appbarcolor}>
             <Toolbar>
-              <Link to="/">
+              <Link to="CommathProject">
                 <IconButton
                   edge="start"
                   className={classes.menuButton}
@@ -67,7 +67,7 @@ export default function ButtonAppBar(props) {
                   <Cpuicon color="#fff" />
                 </IconButton>
               </Link>
-              <Link to="/">
+              <Link to="CommathProject">
                 <Typography
                   style={{ color: "#fff", textTransform: "uppercase" }}
                   variant="h6"
