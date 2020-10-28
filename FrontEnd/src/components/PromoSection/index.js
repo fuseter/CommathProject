@@ -9,6 +9,7 @@ import {
   Server as Sercericon,
 } from "react-feather";
 import { Link } from "react-router-dom";
+import Avatar from '@material-ui/core/Avatar';
 
 class PromoSection extends React.Component {
   constructor(props) {
@@ -19,8 +20,6 @@ class PromoSection extends React.Component {
   }
 
   componentDidMount() {
- 
-
     this.setState({
       promo: _data.promo,
     });
@@ -44,8 +43,9 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        {" "}
-                        <Cpuicon color="#fff" size="30" />
+                      
+                          <Cpuicon color="#9629E6" size="30" />
+                  
                       </span>
                     </div>
                     <h4>บทที่ 1</h4>
@@ -59,7 +59,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <GitMergeicon color="#fff" size="30" />
+                        <GitMergeicon color="#9629E6" size="30" />
                       </span>
                     </div>
                     <h4>บทที่ 2 </h4>
@@ -73,7 +73,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <Layersicon color="#fff" size="30" />
+                        <Layersicon color="#9629E6" size="30" />
                       </span>
                     </div>
                     <h4>บทที่ 3</h4>
@@ -87,7 +87,8 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <Boxicon color="#fff" size="30" />
+                        
+                        <Boxicon color="#9629E6" size="30" />
                       </span>
                     </div>
                     <h4>บทที่ 4</h4>
@@ -101,7 +102,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <Sercericon color="#fff" size="30" />
+                        <Sercericon color="#9629E6" size="30" />
                       </span>
                     </div>
                     <h4>บทที่ 5</h4>
@@ -115,7 +116,7 @@ class PromoSection extends React.Component {
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
-                        <Searchicon color="#fff" size="30" />
+                        <Searchicon color="#9629E6" size="40"/>
                       </span>
                     </div>
                     <h4>บทที่ 6</h4>

@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -6,8 +7,6 @@ from numpy import sign
 class eliminate(BaseModel):
     A:list
     b:list
-
-
 
 class interpolation(BaseModel):
     x:int
@@ -29,9 +28,9 @@ class rootFinding(BaseModel):
     
     
 
-app = FastAPI() # FlaskApp()
+app = FastAPI() 
 
-#broker_cfg = {'AMQP_URI': "amqp://guest:guest@rabbitmq"}
+
 origins = [
     "*",
     "http://localhost",

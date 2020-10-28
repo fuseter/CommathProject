@@ -72,4 +72,5 @@ class HeroSection extends React.Component {
   }
 }
 
+
 export default HeroSection;
