@@ -34,25 +34,25 @@ class HeroSection extends React.Component {
                 <div className="hero-animation-img">
                   <img
                     className="img-fluid d-block m-auto animation-one"
-                    src="img/Telemedicine_01.svg"
+                    src="/CommathProject/img/Telemedicine_01.svg"
                     width="150"
                     alt="animation"
                   />
                   <img
                     className="img-fluid d-none d-lg-block animation-two"
-                    src="img/hero-animation-01.svg"
+                    src="/CommathProject/img/hero-animation-01.svg"
                     alt="animation"
                     width="120"
                   />
                   <img
                     className="img-fluid d-none d-lg-block animation-three"
-                    src="img/Telemedicine_03.svg"
+                    src="/CommathProject/img/Telemedicine_03.svg"
                     alt="animation"
                     width="120"
                   />
                   <img
                     className="img-fluid d-none d-lg-block animation-four"
-                    src="img/hero-animation-03.svg"
+                    src="/CommathProject/img/hero-animation-03.svg"
                     alt="animation"
                     width="200"
                   />
@@ -62,7 +62,7 @@ class HeroSection extends React.Component {
           </div>
 
           <img
-            src="img/hero-bg-shape-2.svg"
+            src="/CommathProject/img/hero-bg-shape-2.svg"
             className="shape-image"
             alt="shape"
           />
