@@ -40,7 +40,7 @@ class PromoSection extends React.Component {
             </div>
             <div className="row equal">
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter1-Basic-Computing">
+                <Link to="b2s">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
@@ -55,7 +55,7 @@ class PromoSection extends React.Component {
               </div>
 
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter2-Linear-Equations">
+                <Link to="elimination">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
@@ -69,7 +69,7 @@ class PromoSection extends React.Component {
               </div>
 
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter3-Interpolation">
+                <Link to="interpolation">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
@@ -83,7 +83,7 @@ class PromoSection extends React.Component {
               </div>
 
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter4-Differentiation">
+                <Link to="differentiation">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
@@ -97,7 +97,7 @@ class PromoSection extends React.Component {
               </div>
 
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter5-Integration">
+                <Link to="integration">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>
@@ -111,7 +111,7 @@ class PromoSection extends React.Component {
               </div>
 
               <div className="col-md-4 col-lg-4" style={{ marginBottom: 30 }}>
-                <Link to="chapter6-Root-finding">
+                <Link to="root-finding">
                   <div className="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
                     <div className="circle-icon mb-5">
                       <span>

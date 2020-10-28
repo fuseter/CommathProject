@@ -1,19 +1,21 @@
-import React from "react";
-import Avatar from "@material-ui/core/Avatar";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import PolicyIcon from "@material-ui/icons/Policy";
+import Lottie from "react-lottie";
+import animationData from "../../Lottie/lf30_editor_6qoxxrrx.json";
+import Alert from "@material-ui/lab/Alert";
+import { getB2s } from "../../../src/functions/function";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -23,15 +25,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: "100%", // Fix IE 11 issue.
+    width: "100%", 
     marginTop: theme.spacing(3),
   },
   submit: {
-    margin: theme.spacing(3, 0, 2),
-    width: 250,
+    margin: theme.spacing(5, 0, 2),
   },
   root: {
-    marginTop: 60,
+    marginTop: 90,
     "& .MuiOutlinedInput-root": {
       "&:hover fieldset": {
         borderColor: "#9629E6",
@@ -41,35 +42,53 @@ const useStyles = makeStyles((theme) => ({
   textcenter: {
     textAlign: "center",
   },
-  cenetr: {
+  center: {
     display: "flex",
     justifyContent: "center",
   },
 }));
 
-export default function SignUp() {
+export default function B2s() {
   const classes = useStyles();
+  const [bit2string, setBit2string] = useState("011110");
+  const [result, setResult] = useState("");
+
+  const generate = () => {
+    getB2s(bit2string).then((res) => {
+      setResult(res);
+    });
+  };
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
-    <div className={classes.paper}>
-      <Container className={classes.root} component="main" maxWidth="lg">
-        <CssBaseline />
-        <Card
-          variant="outlined"
-          style={{
-            borderRadius: 10,
-            boxShadow: "0 3px 20px 0px rgba(0, 0, 0, 0.12)",
-          }}
-        >
-          <CardContent>
-            {/* <Avatar className={classes.avatar}>
-              <LockOutlinedIcon />
-            </Avatar> */}
+    <Container className={classes.root} component="main" maxWidth="lg">
+      <CssBaseline />
+      <Card
+        variant="outlined"
+        style={{
+          borderRadius: 10,
+          boxShadow: "0 3px 20px 0px rgba(0, 0, 0, 0.12)",
+        }}
+      >
+        <div>
+          <Lottie options={defaultOptions} height={220} width={220} />
+        </div>
+        <div className={classes.paper}>
+          <CardContent style={{ width: "40%" }}>
             <Grid style={{ marginBottom: 50 }}>
               <Typography
                 component="h1"
                 variant="h5"
                 className={classes.textcenter}
+                style={{ marginTop: -20 }}
               >
                 บทที่ 1
               </Typography>
@@ -81,33 +100,46 @@ export default function SignUp() {
                 Basic Computing
               </Typography>
             </Grid>
-            <Grid className={classes.cenetr}>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} md={12}>
               <TextField
                 variant="outlined"
-                required
-                
-                id="email"
-                name="email"
-                autoComplete="email"
-                />
+                label="เลขฐานสอง"
+                fullWidth
+                id="bit2string"
+                name="bit2string"
+                value={bit2string}
+                style={{ marginTop: -25 }}
+                onChange={(e) => setBit2string(e.target.value)}
+              />
             </Grid>
-                </Grid>
-            <Grid className={classes.cenetr}>
+            {result ? (
+              <Grid item md={12}>
+                <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
+                <Alert severity="success">
+                  <Typography variant="h5">ผลลัพธ์ :{result}</Typography>
+                </Alert>
+              </Grid>
+            ) : (
+              <div></div>
+            )}
+            <Grid item xs={12} md={12}>
               <Button
                 type="submit"
                 variant="contained"
                 color="primary"
                 className={classes.submit}
                 size="large"
+                fullWidth
+                startIcon={<PolicyIcon />}
+                onClick={generate}
               >
                 <Typography style={{ fontSize: 20 }}>คำนวณ</Typography>
               </Button>
             </Grid>
           </CardContent>
-        </Card>
-      </Container>
-    </div>
+        </div>
+      </Card>
+    </Container>
   );
 }

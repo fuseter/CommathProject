@@ -1,37 +1,4 @@
-/*================
- Template Name: AppCo App Landing Page Template
- Description: AppCo is app and product landing page template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
-=======================*/
 
-/*TABLE OF CONTENTS*/
-/*=====================
-01. RESET CSS
-02. BASE TYPOGRAPHY
-03. PRE DEFINE CLASS CSS
-04. HEADER CSS
-05. HERO SECTION CSS
-06. PROMO SECTION CSS
-07. ABOUT US CSS
-08. FEATURE SECTION CSS
-09. VIDEO PROMO CSS
-10. COUNTER CSS
-11. PRICING CSS
-12. TESTIMONIAL CSS
-13. CONTACT FORM CSS
-14. FOOTER CSS
-=======================*/
-
-
-/* -----------------------------------------
-			   01. RESET CSS
--------------------------------------------- */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,7 +21,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -87,9 +54,7 @@ html{
     font-size: 15px;
 }
 
-/* -----------------------------------------
-           02. BASE TYPOGRAPHY
--------------------------------------------- */
+
 
 body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn, .btn-simple, a, .td-name, td {
     -moz-osx-font-smoothing: grayscale;
@@ -168,9 +133,7 @@ strong, b{
     padding-left: .875em;
     border-radius: 50rem;
 }
-/*========================================
-        03. PRE DEFINE CLASS CSS
-==========================================*/
+
 .ptb-100{
     padding: 100px 0;
 }
@@ -315,7 +278,7 @@ strong, b{
     color: #6730e3;
 }
 
-/*form field css*/
+
 .form-control{
     border-color: #ebebeb;
     padding: .975rem 0.85rem;
@@ -338,7 +301,7 @@ input[type]:-moz-placeholder,
 textarea:-moz-placeholder,
 select:-moz-placeholder,
 select.form-control.has-value{
-    /* Firefox 18- */
+
     color: #b1b1b1;
     font-size: 13px;
 }
@@ -347,7 +310,7 @@ input[type]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder,
 select.form-control.has-value{
-    /* Firefox 19+ */
+
     color: #b1b1b1;
     font-size: 13px;
 }
@@ -366,9 +329,7 @@ select.form-control.has-value{
 }
 
 
-/*=========================================
-            04. HEADER CSS
-============================================*/
+
 .main-menu{
     position: inherit;
     top: inherit;
@@ -575,9 +536,7 @@ select.form-control.has-value{
     }
 }
 
-/*=========================================
-            05. HERO SECTION CSS
-============================================*/
+
 .hero-animation-img, .hero-content-left{
     position: relative;
     z-index: 2;
@@ -805,7 +764,7 @@ select.form-control.has-value{
     bottom: -50px;
 }
 
-/*hero subscribe form*/
+
 .subscribe-form{
     position: relative;
     display: block;
@@ -828,7 +787,7 @@ select.form-control.has-value{
     bottom: 4px;
     width: 30%;
 }
-/*subscribe form footer*/
+
 
 .subscribe-form-footer{
     position: absolute;
@@ -857,7 +816,7 @@ select.form-control.has-value{
     top: -2px;
 }
 
-/*animation shape*/
+
 
 @-webkit-keyframes p1 {
     0% {
@@ -1259,7 +1218,7 @@ select.form-control.has-value{
     animation-iteration-count: infinite
 }
 
-/*hero 2 css*/
+
 .hero-section-2, .hero-section-3{
     position: relative;
     overflow: hidden;
@@ -1296,7 +1255,7 @@ select.form-control.has-value{
 }
 
 
-/*hero background video css*/
+
 
 .video-section-wrap{
     position: relative;
@@ -1314,9 +1273,7 @@ select.form-control.has-value{
 }
 
 
-/*=========================================
-            06. PROMO SECTION CSS
-============================================*/
+
 .single-promo span{
     font-size: 70px;
     line-height: inherit;
@@ -1352,7 +1309,7 @@ select.form-control.has-value{
     box-shadow: 0 1rem 3rem rgba(31,45,61,.125)!important;
 }
 
-/*promo section new style*/
+
 
 .single-promo-card{
     transition: all .2s ease;
@@ -1375,7 +1332,7 @@ select.form-control.has-value{
 
 
 
-/*client section css*/
+
 .client-section-wrap ul{
     display: block;
 }
@@ -1417,7 +1374,7 @@ select.form-control.has-value{
     max-width: 100%;
     max-height: 100%;
     -webkit-filter: opacity(50%);
-    /* Safari 6.0 - 9.0 */
+
     filter: opacity(90%);
     width: 100%;
 }
@@ -1432,9 +1389,7 @@ select.form-control.has-value{
     opacity: 1;
 }
 
-/*=========================================
-            07. ABOUT US CSS
-============================================*/
+
 .switchable {
     position: relative;
 }
@@ -1597,7 +1552,7 @@ select.form-control.has-value{
     }
 }
 
-/*about us app*/
+
 .overflow-hidden{
     overflow: hidden;
 }
@@ -1618,9 +1573,7 @@ select.form-control.has-value{
 
 
 
-/*=========================================
-            08. FEATURE SECTION CSS
-============================================*/
+
 .icon-md{
     font-size: 32px;
     line-height: 35px;
@@ -1727,7 +1680,7 @@ select.form-control.has-value{
     color: #9629e6;
 }
 
-/*feature new style*/
+
 
 .icon-shape {
     display: inline-block;
@@ -1750,7 +1703,7 @@ select.form-control.has-value{
     line-height: 50px;
     font-size: 22px;
 }
-/*feature tab style*/
+
 .feature-tab.nav-tabs{
     border-bottom: 0;
 }
@@ -1796,9 +1749,7 @@ select.form-control.has-value{
     margin-top: 25px;
     min-height: 260px;
 }
-/*=========================================
-            09. VIDEO PROMO CSS
-============================================*/
+
 .background-img{
     position: relative;
     width: 100%;
@@ -1822,8 +1773,8 @@ select.form-control.has-value{
     transition: all 800ms ease-in-out;
 }
 .video-promo-content a img:hover{
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
     transform: rotate(45deg);
 }
 
@@ -1891,9 +1842,7 @@ select.form-control.has-value{
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0)
     }
 }
-/*=========================================
-            10. COUNTER CSS
-============================================*/
+
 .counter-wrap{
     background: #ffffff;
     width: 100%;
@@ -1938,9 +1887,7 @@ select.form-control.has-value{
     line-height: 28px;
 }
 
-/*=========================================
-            11. PRICING CSS
-============================================*/
+
 .card.single-pricing-pack{
     transition: all 0.2s ease 0s;
     box-shadow: 0 0 0 1px #ebebeb;
@@ -2001,7 +1948,7 @@ select.form-control.has-value{
 
 
 
-/*price new style*/
+
 .popular-price{
     box-shadow: 0 1rem 3rem rgba(31,45,61,.125)!important;
     transform: translate(0, -5px);
@@ -2009,7 +1956,7 @@ select.form-control.has-value{
 }
 
 
-/*pricing faq*/
+
 .accordion-faq .card {
     margin-bottom: 1.5rem;
     border-radius: 0.375rem !important;
@@ -2057,7 +2004,7 @@ select.form-control.has-value{
     font-weight: 700;
 }
 
-/*sccreenshot css*/
+
 .screen-slider-content {
     position: relative
 }
@@ -2099,9 +2046,7 @@ select.form-control.has-value{
 
 
 
-/*=========================================
-            12. TESTIMONIAL CSS
-============================================*/
+
 .testimonial-wrap{
     padding: 30px;
 }
@@ -2231,9 +2176,7 @@ blockquote:before {
     background-repeat: no-repeat;
 }
 
-/*=========================================
-            13. CONTACT FORM CSS
-============================================*/
+
 .sign-up-form-wrap{
     display: block;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
@@ -2295,11 +2238,11 @@ blockquote:before {
     width:100%;
     border:0;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
-    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
-    -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+    -webkit-filter: grayscale(99%);
+    -webkit-backface-visibility: hidden;  
 }
 
-/*our team css*/
+
 .single-team-member .team-info {
     background-image: linear-gradient(to right, rgba(32, 40, 119, 0.85), rgba(55, 46, 149, 0.9), rgba(83, 49, 177, 0.85), rgba(114, 48, 205, 0.8), rgba(150, 41, 230, 0.8));
     opacity: 0;
@@ -2366,7 +2309,7 @@ blockquote:before {
     width: 100%;
 }
 
-/*team single*/
+
 .team-social-list li a{
     padding: 5px;
 }
@@ -2379,7 +2322,7 @@ blockquote:before {
     line-height: inherit;
     vertical-align: middle;
 }
-/*skill progressbar*/
+
 .progress {
     position: relative;
     display: -ms-flexbox;
@@ -2415,7 +2358,7 @@ blockquote:before {
     font-weight: 500;
 }
 
-/*progressbar animation*/
+
 
 
 .progress span {
@@ -2442,9 +2385,7 @@ blockquote:before {
 }
 
 
-/*=========================================
-            15. FOOTER CSS
-============================================*/
+
 
 .background-img-2{
     position: relative;
@@ -2503,7 +2444,7 @@ blockquote:before {
 }
 
 
-/*new css new update*/
+
 .full-screen{
     min-height: 100vh;
     position: relative;
@@ -2520,7 +2461,7 @@ blockquote:before {
 }
 
 
-/*404 page*/
+
 .error-content .notfound-404 {
     position: relative;
     height: 280px;
@@ -2553,7 +2494,7 @@ blockquote:before {
 
 }
 
-/*login css*/
+
 .login-signup-content{
     height: 100%;
     width: 100%;
@@ -2645,7 +2586,7 @@ blockquote:before {
 }
 
 
-/*login signup new style*/
+
 .login-signup-card{
     position: relative;
     z-index: 2;
@@ -2661,9 +2602,7 @@ blockquote:before {
 }
 
 
-/*=========================================
-           24. SINGLE PAGE HEADER CSS
-============================================*/
+
 @media (min-width: 320px) and (max-width: 576px){
     .page-header-content{
         padding-top: 3rem!important;
@@ -2693,9 +2632,7 @@ blockquote:before {
 }
 
 
-/*=========================================
-            25. BLOG SECTION CSS
-============================================*/
+
 .single-blog-card{
     margin-bottom: 25px;
 }
@@ -2751,7 +2688,7 @@ a.detail-link:hover span{
     margin-left: 8px;
 }
 
-/*blog single page css*/
+
 
 .row-post-thumbnail .post {
     border: 0;
@@ -2834,7 +2771,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-top: 15px;
 }
 
-/*blog single css*/
+
 .post-content blockquote {
     border-left: 2px solid #eaeaea;
     padding: 10px 0 10px 40px;
@@ -2855,7 +2792,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin: 15px 0 15px 40px;
 }
 
-/*comments css*/
+
 .comment, .comment-shop {
     border-bottom: 1px solid #f0f0f0;
     padding: 30px 0 0;
@@ -2920,7 +2857,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 
-/*pagination*/
+
 .custom-pagination-nav ul li{
     text-align: center;
     margin-right: 10px;
@@ -2944,7 +2881,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     border: none;
     background: transparent;
 }
-/*blog sidebar*/
+
 
 .widget-search {
     padding: 0;
