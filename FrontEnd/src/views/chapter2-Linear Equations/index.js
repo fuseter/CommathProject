@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
@@ -302,24 +302,41 @@ export default function Unit1() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item md={12}>
-              <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
-              <Alert severity="success">
-                <Typography variant="h5">ผลลัพธ์ x0 : {x0}</Typography>
-              </Alert>
-            </Grid>
-            <Grid item md={12}>
-              <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
-              <Alert severity="success">
-                <Typography variant="h5">ผลลัพธ์ x1 : {x1}</Typography>
-              </Alert>
-            </Grid>
-            <Grid item md={12}>
-              <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
-              <Alert severity="success">
-                <Typography variant="h5">ผลลัพธ์ x2 : {x2}</Typography>
-              </Alert>
-            </Grid>
+
+            {x0 ? (
+              <Fragment>
+                <Grid item md={12}>
+                  <Typography
+                    variant="h4"
+                    style={{ marginTop: 20 }}
+                  ></Typography>
+                  <Alert severity="success">
+                    <Typography variant="h5">ผลลัพธ์ x0 : {x0}</Typography>
+                  </Alert>
+                </Grid>
+                <Grid item md={12}>
+                  <Typography
+                    variant="h4"
+                    style={{ marginTop: 20 }}
+                  ></Typography>
+                  <Alert severity="success">
+                    <Typography variant="h5">ผลลัพธ์ x1 : {x1}</Typography>
+                  </Alert>
+                </Grid>
+                <Grid item md={12}>
+                  <Typography
+                    variant="h4"
+                    style={{ marginTop: 20 }}
+                  ></Typography>
+                  <Alert severity="success">
+                    <Typography variant="h5">ผลลัพธ์ x2 : {x2}</Typography>
+                  </Alert>
+                </Grid>
+              </Fragment>
+            ) : (
+              <div></div>
+            )}
+
             <Grid
               item
               xs={12}

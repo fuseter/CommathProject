@@ -286,12 +286,18 @@ export default function GetInterpolation() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item md={12}>
-              <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
-              <Alert severity="success">
-                <Typography variant="h5">ผลลัพธ์ : {result}</Typography>
-              </Alert>
-            </Grid>
+
+            {result ? (
+              <Grid item md={12}>
+                <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
+                <Alert severity="success">
+                  <Typography variant="h5">ผลลัพธ์ : {result}</Typography>
+                </Alert>
+              </Grid>
+            ) : (
+              <div></div>
+            )}
+
             <Grid
               item
               xs={12}

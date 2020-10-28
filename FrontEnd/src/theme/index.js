@@ -8,8 +8,8 @@ const theme = createMuiTheme({
     palette: {
         background: {
             dark: "#1C2025",
-            default: colors.common.white, // สีของ border icon
-            paper: component // สีของก้อน componemt
+            default: colors.common.white, 
+            paper: component 
         },
         primary: {
             main: yellow

@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: "100%", 
+    width: "100%",
     marginTop: theme.spacing(3),
   },
   submit: {
@@ -59,14 +59,12 @@ export default function Unit1() {
     const data = {
       a: a,
       b: b,
-      dx: dx
+      dx: dx,
     };
     getRootFinding(data).then((res) => {
       setresult(res);
     });
   };
-
-
 
   const defaultOptions = {
     loop: true,
@@ -106,7 +104,7 @@ export default function Unit1() {
                 variant="h5"
                 className={classes.textcenter}
               >
-               Root Finding
+                Root Finding
               </Typography>
             </Grid>
             <Grid container spacing={3}>
@@ -145,12 +143,16 @@ export default function Unit1() {
                 />
               </Grid>
             </Grid>
-            <Grid item md={12}>
-              <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
-              <Alert severity="success">
-                <Typography variant="h5">ผลลัพธ์ : {result}</Typography>
-              </Alert>
-            </Grid>
+            {result ? (
+              <Grid item md={12}>
+                <Typography variant="h4" style={{ marginTop: 20 }}></Typography>
+                <Alert severity="success">
+                  <Typography variant="h5">ผลลัพธ์ : {result}</Typography>
+                </Alert>
+              </Grid>
+            ) : (
+              <div></div>
+            )}
             <Grid item xs={12} md={12}>
               <Button
                 type="submit"
