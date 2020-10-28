@@ -8,7 +8,7 @@ import {
   Search as Searchicon,
   Server as Sercericon,
 } from "react-feather";
-import { Link , useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 
 class PromoSection extends React.Component {
@@ -28,12 +28,9 @@ class PromoSection extends React.Component {
   render() {
     const { navigation } = this.props;
 
-   const  nextPage = () => {
-      navigation()
-    }
-
-
-
+    const nextPage = () => {
+      navigation();
+    };
 
     return (
       <React.Fragment>
